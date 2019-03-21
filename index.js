@@ -1,5 +1,6 @@
 const app = require('express')();
 const cors = require('cors');
+const request = require('request');
 const {blogger} = require('./api')
 app.use(cors())
 
@@ -8,7 +9,11 @@ app.get('/',async(req,res)=>{
         res.send({status:'error paramete'})
     }else{
         const url  = await blogger(req.query.url);
-        res.send(url)
+        if(req.query.type){
+            request(url.play_url).pipe(res);
+        }else{
+            res.send(url)
+        }
     }
 })
 
