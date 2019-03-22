@@ -6,8 +6,7 @@
   "author": "khalisafkari <khalis411@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js",
-    "test":"jest"
+    "dev": "nodemon index.js"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
