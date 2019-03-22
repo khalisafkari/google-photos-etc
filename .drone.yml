@@ -1,0 +1,8 @@
+kind: pipeline
+name: node8
+steps:
+-name: khalis
+ image: node:8
+ commands:
+ -npm install
+ -npm run dev
