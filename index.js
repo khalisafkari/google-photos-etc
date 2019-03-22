@@ -2,6 +2,7 @@ const app = require('express')();
 const cors = require('cors');
 const request = require('request');
 const {blogger} = require('./api')
+
 app.use(cors())
 
 app.get('/',async(req,res)=>{
