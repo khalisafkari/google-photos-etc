@@ -12,7 +12,7 @@
  1. clone repo
  2. install dep with  **npm i**
  3. run **npm run dev**
- 4. open browser json mode  `http://localhost/?url=https://www.blogger.com/video.g?token=AD6v5dy6xibQ1EBFaa1lN91Il9qch9W8dAnCVk8uDihtPVLuLwc0TUdSA24IP8gRMKqxIQQgenDZQFQA2pCYwQpH3O1iOKWxVfuapwPd6QIRDVKAtunBuMnh6ALvCUkLXhCqoH4RZ6D_`
+ 4. open browser json mode  `https://khalis-khalis411.now.sh/?url=https://www.blogger.com/video.g?token=AD6v5dy6xibQ1EBFaa1lN91Il9qch9W8dAnCVk8uDihtPVLuLwc0TUdSA24IP8gRMKqxIQQgenDZQFQA2pCYwQpH3O1iOKWxVfuapwPd6QIRDVKAtunBuMnh6ALvCUkLXhCqoH4RZ6D_`
  6. open browser video proxy mode `http://localhost/?type=true&url=https://www.blogger.com/video.g?token=AD6v5dy6xibQ1EBFaa1lN91Il9qch9W8dAnCVk8uDihtPVLuLwc0TUdSA24IP8gRMKqxIQQgenDZQFQA2pCYwQpH3O1iOKWxVfuapwPd6QIRDVKAtunBuMnh6ALvCUkLXhCqoH4RZ6D_`
 
 ## Screenshot
