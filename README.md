@@ -38,7 +38,7 @@
 ![](https://i.imgur.com/7TfqEUc.png)
 
 > json mode
-> ![](https://i.imgur.com/pcZh2yn.png)
+> ![](https://i.imgur.com/xETf6I7.png)
 
 
 ## Note 
