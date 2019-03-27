@@ -1,12 +1,61 @@
 const cheerio = require('cheerio');
 const axios = require('axios');
 
-const blogger = async(url) => {
-    let uri = await axios.get(url);
-    const $ = cheerio.load(uri.data);
-    const data = $('script')[0].children[0]
-    const rp = JSON.parse( data.data.replace('var VIDEO_CONFIG =',''))
-    return rp.streams[0];
+class Video {    
+    async Blogger({uri}){
+        const url = await axios.get(uri);
+        const $ = cheerio.load(url.data);
+        const todos = []
+        $('iframe').each((index,item)=>{
+            const $element = $(item);
+            if(!$element.attr('src')){}else{todos.push($element.attr('src'))};
+        })
+        for(let i = 0;i < todos.length;i++){todos[i] = await multi(todos[i])}
+        return todos;
+    }
+
+    async Blogger_Video({uri,type}){
+        if(type == 1){
+            const url = await bg_url(uri);
+            return url;
+        }else if(type == 2){
+            const url = await multi(uri);
+            return url.url
+        }else{
+            return {
+                code:1,
+                message:'params not found'
+            }
+        }
+
+    }
 }
 
-module.exports = {blogger}
+const multi = async(i) => {
+    const url = await axios.get(i);
+    const $ = cheerio.load(url.data);
+    const data = $('script')[0].children[0]
+    const rp = JSON.parse( data.data.replace('var VIDEO_CONFIG =',''))
+    return{
+        poster:rp.thumbnail,
+        url:rp.streams[0].play_url
+    }
+}
+
+const bg_url = async(s) => {
+    const i = await axios.get(s);
+    const url = await axios.get(cheerio.load(i.data)('iframe').attr('src'));
+    const $ = cheerio.load(url.data)('script')[0].children[0];
+    const rp = JSON.parse($.data.replace('var VIDEO_CONFIG =',''));
+    return rp.streams[0].play_url;
+}
+
+// const blogger = async(url) => {
+//     let uri = await axios.get(url);
+//     const $ = cheerio.load(uri.data);
+//     const data = $('script')[0].children[0]
+//     const rp = JSON.parse( data.data.replace('var VIDEO_CONFIG =',''))
+//     return rp.streams[0];
+// }
+
+module.exports = new Video()

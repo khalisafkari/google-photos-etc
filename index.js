@@ -1,20 +1,51 @@
 const app = require('express')();
 const cors = require('cors');
 const request = require('request');
-const {blogger} = require('./api')
+const Video = require('./api')
 
 app.use(cors())
 
+// app.get('/',async(req,res)=>{
+//     if(!req.query.url){
+//         res.send({status:'error paramete'})
+//     }else{
+//         const url  = await blogger(req.query.url);
+//         if(req.query.type){
+//             request(url.play_url).pipe(res);
+//         }else{
+//             res.send(url)
+//         }
+//     }
+// })
+
 app.get('/',async(req,res)=>{
     if(!req.query.url){
-        res.send({status:'error paramete'})
+        res.send({
+            status:'error query ',
+            build:'/?url='
+        })
     }else{
-        const url  = await blogger(req.query.url);
-        if(req.query.type){
-            request(url.play_url).pipe(res);
-        }else{
-            res.send(url)
-        }
+        Video.Blogger({uri:req.query.url}).then(response=>{
+            res.send(response)
+        })
+    }
+})
+
+
+app.get('/video/:type',async(req,res)=>{
+    if(!req.query.url){
+        res.send({
+            status:'error query ',
+            build:'/video/{1-2}?url='
+        })
+    }else{
+        Video.Blogger_Video({uri:req.query.url,type:req.params.type}).then(response=>{
+            if(!response.code){
+                request(response).pipe(res);
+            }else{
+                res.send(response);
+            }
+        })
     }
 })
 
