@@ -5,6 +5,12 @@
 > Grab blogger streaming link
    ****
    **Leaguage** :  node
+   
+## TOC
+  * [Install](#installation)
+  * [Screenshot](#screenshot)
+  * [Note](#note)
+  * [Donate](#donate)
 
 ## Installation
 
@@ -45,3 +51,6 @@
  > json mode no longer uses the www.blogger.com url but the url of your blog
  
  > if you use react-native follow this repo [react-native-google-photos](https://github.com/khalisafkari/react-native-google-photos)
+ 
+ ## Donate
+ * <a href="https://paypal.me/khalisafkari?locale.x=id_ID"><img src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.png" heigth="50" width="50"/></a>
