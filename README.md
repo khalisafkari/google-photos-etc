@@ -2,15 +2,17 @@
 
 [![Build Status](https://kutt.it/q7fNdL)](https://travis-ci.org/khalisafkari/khalis)
 
-> Grab blogger streaming link
+> Grab Blogger & Google Photos, cloudvideo.tv, etc streaming link 
    ****
    **Leaguage** :  node
+   **react-native** : [react-native-google-photos](https://github.com/khalisafkari/react-native-google-photos)
    
 ## TOC
   * [Install](#installation)
   * [Screenshot](#screenshot)
   * [Note](#note)
   * [Donate](#donate)
+  * [Support](#support)
 
 ## Installation
 
@@ -26,8 +28,19 @@
    //localhost mode blogger
    `http://localhost:3000/?url=https://prikate09.blogspot.com/2017/10/all-ani-29-oktober-2017-413.html`
 
-   //localhost mode cloudvideo.tv
+   //online example cloudvideo.tv
+  `https://khalis-khalis411.now.sh/cloudvideo?url=https://cloudvideo.tv/42xcdwiwamlh`
+  
+  //localhost mode cloudvideo.tv
    `http://localhost:3000/cloudvideo?url=https://cloudvideo.tv/42xcdwiwamlh`
+
+   //online example photos.google.com
+   `https://khalis-khalis411.now.sh/photos?url=https://photos.google.com/share/AF1QipMTEPAiVF8t0YqLukflnOSQjwfd8ARIoT2h37AXvYO1uaWodbeiFoBUDuD_19tEbg/photo/AF1QipPA2Bq0JlAR9LoGD3mogsxSb9OZWEG4XqBDD4Rv?key=cjhUT0xrZjM5NGN2SVRLOVptZU5SMUlKV0lQYWpB`
+
+   //localhost mode photos.google.com
+   `http://localhost:3000/photos?url=https://photos.google.com/share/AF1QipMTEPAiVF8t0YqLukflnOSQjwfd8ARIoT2h37AXvYO1uaWodbeiFoBUDuD_19tEbg/photo/AF1QipPA2Bq0JlAR9LoGD3mogsxSb9OZWEG4XqBDD4Rv?key=cjhUT0xrZjM5NGN2SVRLOVptZU5SMUlKV0lQYWpB`
+
+
 
  ```
  6. > Video Mode 
@@ -58,3 +71,8 @@
  
  ## Donate
  * <a href="https://paypal.me/khalisafkari?locale.x=id_ID"><img src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.png" heigth="50" width="50"/></a>
+
+## Support
+* [x] Google Photos
+* [x] Blogger.com
+* [x] Cloudvideo.tv

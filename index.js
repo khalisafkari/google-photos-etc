@@ -42,6 +42,20 @@ app.get('/cloudvideo',async(req,res)=>{ // https://cloudvideo.tv
    })
 })
 
+app.get('/photos',async(req,res)=>{
+    if(!req.query.url){
+        res.send({
+            status:'errorr',
+            build:'query not fount'
+        })
+    }else{
+        Video.Photos(req.query.url)
+        .then(response=>{
+            res.send(response);
+        })
+    }
+})
+
 
 
 

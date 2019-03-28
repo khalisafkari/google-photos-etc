@@ -64,6 +64,24 @@ class Video {
         }
         return todos;
     }
+
+    async Photos(i){
+        const url = await axios.get(i);
+        const $ = cheerio.load(url.data)('body').html()
+        const item = `${$}`
+        const $data = item.split('003d');
+        const todos = {}
+        for(let i = 0;i < $data.length;i++){
+            if($data[i].indexOf('hd1080') != -1){
+                todos['hd1080'] = `${decodeURIComponent($data[1].split('%3Dm')[0])}=m37`
+            }else if($data[i].indexOf('hd720') != -1){
+                todos['hd720'] = `${decodeURIComponent($data[1].split('%3Dm')[0])}=m22`
+            }else{
+                todos['hd480'] = `${decodeURIComponent($data[1].split('%3Dm')[0])}=m18`
+            }
+        }
+        return todos;
+    }
 }
 
 const cloud =async(i) =>{
