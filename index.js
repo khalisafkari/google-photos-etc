@@ -5,19 +5,6 @@ const Video = require('./api')
 
 app.use(cors())
 
-// app.get('/',async(req,res)=>{
-//     if(!req.query.url){
-//         res.send({status:'error paramete'})
-//     }else{
-//         const url  = await blogger(req.query.url);
-//         if(req.query.type){
-//             request(url.play_url).pipe(res);
-//         }else{
-//             res.send(url)
-//         }
-//     }
-// })
-
 app.get('/',async(req,res)=>{
     if(!req.query.url){
         res.send({
@@ -47,6 +34,12 @@ app.get('/video/:type',async(req,res)=>{
             }
         })
     }
+})
+
+app.get('/cloudvideo',async(req,res)=>{ // https://cloudvideo.tv
+   Video.CloudVideo({uri:req.query.url}).then(response=>{
+       res.send(response);
+   })
 })
 
 

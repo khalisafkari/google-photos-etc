@@ -29,6 +29,46 @@ class Video {
         }
 
     }
+
+    async CloudVideo({uri}){
+        const its = uri.replace('https://cloudvideo.tv/','')
+        const url = await axios.get(uri);
+        const $ = cheerio.load(url.data);
+        const todos = {
+            video_hls_only:cheerio.load(url.data)('video > source').attr('src'),
+            data:[]
+        }
+        $('#download > a').each(async(i,item)=>{
+            const $element = $(item);
+            const m = $element.attr('onclick').replace('download_video(','').replace(')','').replace(`'${its}'`,'');
+            if(m.indexOf(`'n'`) !== -1){
+                todos.data.push({
+                   title:$element.text(),
+                   url:`https://cloudvideo.tv/dl?op=download_orig&id=${its}&mode=n&hash=${m.replace(`,'n','`,'').replace(`'`,'')}` 
+                })
+            }else if(m.indexOf(`'h'`) !== -1){
+                todos.data.push({
+                    title:$element.text(),
+                    url:`https://cloudvideo.tv/dl?op=download_orig&id=${its}&mode=n&hash=${m.replace(`,'h','`,'').replace(`'`,'')}`
+                })
+            }else if(m.indexOf(`'l'`) !== -1){
+                todos.data.push({
+                    title:$element.text(),
+                    url:`https://cloudvideo.tv/dl?op=download_orig&id=${its}&mode=n&hash=${m.replace(`,'l','`,'').replace(`'`,'')}`
+                })
+            }
+        })
+        for(let i = 0;i < todos.data.length;i++){
+            const data = await cloud(todos.data[i].url);
+            todos.data[i].url = data;   
+        }
+        return todos;
+    }
+}
+
+const cloud =async(i) =>{
+    const url = await axios.get(i);
+    return cheerio.load(url.data)('a[class="btn btn-primary btn-block btn-signin"]').attr('href')
 }
 
 const multi = async(i) => {
