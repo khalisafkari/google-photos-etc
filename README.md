@@ -43,3 +43,5 @@
 
 ## Note 
  > json mode no longer uses the www.blogger.com url but the url of your blog
+ 
+ > if you use react-native follow this repo [react-native-google-photos](https://github.com/khalisafkari/react-native-google-photos)
