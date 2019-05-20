@@ -1,6 +1,6 @@
 #### khalis
 
-[![Build Status](https://kutt.it/q7fNdL)](https://travis-ci.org/khalisafkari/khalis)
+[![Build Status](https://travis-ci.org/khalisafkari/google-photos-etc.svg?branch=master)](https://travis-ci.org/khalisafkari/google-photos-etc)
 
 > Grab Blogger & Google Photos, mp4upload.com, cloudvideo.tv, etc streaming link 
    ****
