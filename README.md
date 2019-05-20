@@ -1,4 +1,4 @@
-#### khalis
+#### Multi direct link Streaming & Downloader
 
 [![Build Status](https://travis-ci.org/khalisafkari/google-photos-etc.svg?branch=master)](https://travis-ci.org/khalisafkari/google-photos-etc)
 
