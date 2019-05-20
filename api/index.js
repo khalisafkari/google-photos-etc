@@ -82,6 +82,27 @@ class Video {
         }
         return todos;
     }
+
+    async Mp4Upload(i){
+        const url = await axios.get(i);
+        const $ = cheerio.load(url.data)('body > script:nth-child(9)').html();
+        const items = $.substring(926,$.length);
+        const tt = `${items.slice(0,-15)}`;  
+        const m = explodeMp4Upload(tt) 
+        return m;
+    }
+}
+
+const explodeMp4Upload = async(i) => {
+    const t = i.split('video|')[1];
+    const m = t.split('|282')
+    if(i.indexOf('|www2|') !== -1){
+      // console.log('yes |www2|')
+      return `https://www2.mp4upload.com:282/d/${m[0]}/video.mp4`
+    }else if(i.indexOf('|s3|') !== -1){
+      // console.log('yes |s3|')
+      return `https://s3.mp4upload.com:282/d/${m[0]}/video.mp4`
+    }
 }
 
 const cloud =async(i) =>{

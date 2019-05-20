@@ -57,8 +57,6 @@ app.get('/photos',async(req,res)=>{
 })
 
 
-
-
 app.listen(3000,(req,res)=>{
     console.log(`Running Port 3000`);
 })

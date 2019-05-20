@@ -2,7 +2,7 @@
 
 [![Build Status](https://kutt.it/q7fNdL)](https://travis-ci.org/khalisafkari/khalis)
 
-> Grab Blogger & Google Photos, cloudvideo.tv, etc streaming link 
+> Grab Blogger & Google Photos, mp4upload.com, cloudvideo.tv, etc streaming link 
    ****
   > **Leaguage** :  node
   
@@ -77,3 +77,5 @@
 * [x] Google Photos
 * [x] Blogger.com
 * [x] Cloudvideo.tv
+* [x] mp4upload.com
+* [ ] yourupload.com
