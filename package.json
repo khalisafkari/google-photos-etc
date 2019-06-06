@@ -1,6 +1,6 @@
 {
   "name": "khalis",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "repository": "https://github.com/khalisafkari/khalis.git",
   "author": "khalisafkari <khalis411@gmail.com>",
@@ -12,7 +12,7 @@
     "nodemon": "^1.18.10"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "cheerio": "^1.0.0-rc.2",
     "cors": "^2.8.5",
     "express": "^4.16.4",

@@ -56,6 +56,14 @@ app.get('/photos',async(req,res)=>{
     }
 })
 
+app.get('/rapid',async(req,res)=>{
+    Video.RapidVideo(req.query.url).then(response=>{
+        res.send({
+            url:response
+        })
+    })
+})
+
 
 app.listen(3000,(req,res)=>{
     console.log(`Running Port 3000`);

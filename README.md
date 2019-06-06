@@ -78,4 +78,5 @@
 * [x] Blogger.com
 * [x] Cloudvideo.tv
 * [x] mp4upload.com
+* [x] rapidvideo.com
 * [ ] yourupload.com

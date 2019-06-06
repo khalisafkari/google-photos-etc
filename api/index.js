@@ -91,6 +91,11 @@ class Video {
         const m = explodeMp4Upload(tt) 
         return m;
     }
+
+    async RapidVideo(i){
+        const url = await axios.get(i);
+        return cheerio.load(url.data)('source').attr('src')
+    }
 }
 
 const explodeMp4Upload = async(i) => {
