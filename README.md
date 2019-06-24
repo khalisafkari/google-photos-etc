@@ -73,10 +73,18 @@
  ## Donate
  * <a href="https://paypal.me/khalisafkari?locale.x=id_ID"><img src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.png" heigth="50" width="50"/></a>
 
+ ## Available
+ 
+ * [x] Google Photos
+ * [x] Blogger.com
+ * [x] Cloudvideo.tv
+ * [x] mp4upload.com
+ * [x] rapidvideo.com
+ * [ ] yourupload.com
+   
 ## Support
-* [x] Google Photos
-* [x] Blogger.com
-* [x] Cloudvideo.tv
-* [x] mp4upload.com
-* [x] rapidvideo.com
-* [ ] yourupload.com
+   <div>
+        <a href="https://www.jetbrains.com/?from=https://github.com/khalisafkari/google-photos-etc"><img src="https://i.ibb.co/jwhfW4j/jetbrains.png" alt="jetbrains" width="100" height="100" border="0"></a>
+         <a href="https://kutt.it/2ew2Sx"><img src="https://assets.zeit.co/image/upload/front/assets/design/white-full-logo.png" alt="zeit" width="150" height="100" border="0"></a>
+   </div>
+
