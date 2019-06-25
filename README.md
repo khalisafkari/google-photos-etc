@@ -30,10 +30,10 @@
    `http://localhost:3000/?url=https://prikate09.blogspot.com/2017/10/all-ani-29-oktober-2017-413.html`
 
    //online example cloudvideo.tv
-  `https://khalis-khalis411.now.sh/cloudvideo?url=https://cloudvideo.tv/42xcdwiwamlh`
+  `https://khalis-khalis411.now.sh/cloudvideo?url=https://khalis-khalis411.now.sh/cloudvideo?url=https://cloudvideo.tv/wnjb1hz5ccdd`
   
   //localhost mode cloudvideo.tv
-   `http://localhost:3000/cloudvideo?url=https://cloudvideo.tv/42xcdwiwamlh`
+   `http://localhost:3000/cloudvideo?url=  https://khalis-khalis411.now.sh/cloudvideo?url=https://cloudvideo.tv/wnjb1hz5ccdd`
 
    //online example photos.google.com
    `https://khalis-khalis411.now.sh/photos?url=https://photos.google.com/share/AF1QipMTEPAiVF8t0YqLukflnOSQjwfd8ARIoT2h37AXvYO1uaWodbeiFoBUDuD_19tEbg/photo/AF1QipPA2Bq0JlAR9LoGD3mogsxSb9OZWEG4XqBDD4Rv?key=cjhUT0xrZjM5NGN2SVRLOVptZU5SMUlKV0lQYWpB`
