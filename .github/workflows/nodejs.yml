@@ -11,14 +11,6 @@ jobs:
       matrix:
         node-version: [8.x, 10.x, 12.x]
         
-    services:
-        nginx:
-          image: nginx
-          ports:
-            - 8080:80
-          env:
-            NGINX_PORT: 80
-
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
@@ -28,6 +20,5 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
-        node index.js
       env:
         CI: true
