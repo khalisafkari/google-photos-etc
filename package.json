@@ -6,13 +6,15 @@
     "type": "git",
     "url": "git+https://github.com/khalisafkari/google-photos-etc.git"
   },
-  "author": "Khalis afkari <khalis411@gmail.com>",
+  "author": "Khalis Afkari <khalis411@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "release": "npm-github-release"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "npm-github-release": "^0.12.0"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -20,9 +22,6 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "request": "^2.88.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   },
   "homepage": "https://github.com/khalisafkari/google-photos-etc",
   "description": "[![Build Status](https://travis-ci.org/khalisafkari/google-photos-etc.svg?branch=master)](https://travis-ci.org/khalisafkari/google-photos-etc)",
