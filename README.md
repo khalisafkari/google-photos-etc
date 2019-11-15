@@ -76,8 +76,8 @@
  ## Available
  
  * [x] Google Photos
- * [x] Blogger.com
- * [x] Cloudvideo.tv
+ * [x] Blogger.com 
+ * [x] Cloudvideo.tv (*Proxy only*)
  * [x] mp4upload.com
  * [x] rapidvideo.com
  * [ ] yourupload.com

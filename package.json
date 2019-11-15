@@ -1,9 +1,12 @@
 {
   "name": "google-photos-etc",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "index.js",
-  "repository": "https://github.com/khalisafkari/khalis.git",
-  "author": "khalisafkari <khalis411@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khalisafkari/google-photos-etc.git"
+  },
+  "author": "Khalis afkari <khalis411@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon index.js"
@@ -17,5 +20,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "request": "^2.88.0"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "homepage": "https://github.com/khalisafkari/google-photos-etc"
 }
