@@ -1,10 +1,10 @@
 {
   "name": "google-photos-etc",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khalisafkari/google-photos-etc.git"
+    "url": "git+https://github.com/khalisafkari/google-photos-etc.git"
   },
   "author": "Khalis afkari <khalis411@gmail.com>",
   "license": "MIT",
@@ -21,6 +21,20 @@
     "express": "^4.17.1",
     "request": "^2.88.0"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
-  "homepage": "https://github.com/khalisafkari/google-photos-etc"
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "homepage": "https://github.com/khalisafkari/google-photos-etc",
+  "description": "[![Build Status](https://travis-ci.org/khalisafkari/google-photos-etc.svg?branch=master)](https://travis-ci.org/khalisafkari/google-photos-etc)",
+  "bugs": {
+    "url": "https://github.com/khalisafkari/google-photos-etc/issues"
+  },
+  "keywords": [
+    "google",
+    "google",
+    "photos",
+    "google",
+    "drive",
+    "blogger"
+  ]
 }
