@@ -2,7 +2,7 @@
     "version": 2,
     "name":"khalis",
     "alias":["khalis-khalis411.now.sh"],
-    "regions": ["sfo1", "hnd1","gru1"],
+    "regions": ["all"],
     "builds":[
         { "src": "index.js", "use": "@now/node" }
     ],
