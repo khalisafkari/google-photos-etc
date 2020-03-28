@@ -4,7 +4,7 @@
     "alias":["khalis-khalis411.now.sh"],
     "regions": ["sfo1", "hnd1","gru1"],
     "builds":[
-        { "src": "index.js", "use": "@now/node-server" }
+        { "src": "index.js", "use": "@now/node" }
     ],
     "routes":[
         { "src":".*","dest":"index.js" }
