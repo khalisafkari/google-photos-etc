@@ -1,6 +1,6 @@
 const cheerio = require('cheerio');
 const axios = require('axios');
-
+ 
 class Video {    
     async Blogger({uri}){
         const url = await axios.get(uri);

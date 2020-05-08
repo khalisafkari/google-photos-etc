@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="31402512-44b9-4ee3-872e-a2c7b5793bf8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,10 +87,10 @@
       <screen x="48" y="28" width="1318" height="740" />
     </state>
     <state x="302" y="59" width="800" height="675" key="#Notifications/48.28.1318.740@48.28.1318.740" timestamp="1585389371163" />
-    <state x="291" y="28" width="821" height="738" key="CommitChangelistDialog2" timestamp="1585389683100">
+    <state x="291" y="28" width="821" height="738" key="CommitChangelistDialog2" timestamp="1585389907361">
       <screen x="48" y="28" width="1318" height="740" />
     </state>
-    <state x="291" y="28" width="821" height="738" key="CommitChangelistDialog2/48.28.1318.740@48.28.1318.740" timestamp="1585389683100" />
+    <state x="291" y="28" width="821" height="738" key="CommitChangelistDialog2/48.28.1318.740@48.28.1318.740" timestamp="1585389907361" />
     <state x="148" y="128" width="1118" height="540" key="DiffContextDialog" timestamp="1585389585161">
       <screen x="48" y="28" width="1318" height="740" />
     </state>
@@ -100,10 +99,10 @@
       <screen x="48" y="28" width="1318" height="740" />
     </state>
     <state x="188" y="33" key="SettingsEditor/48.28.1318.740@48.28.1318.740" timestamp="1585389066244" />
-    <state x="302" y="133" width="800" height="527" key="Vcs.Push.Dialog.v2" timestamp="1585389686690">
+    <state x="302" y="133" width="800" height="527" key="Vcs.Push.Dialog.v2" timestamp="1585389909527">
       <screen x="48" y="28" width="1318" height="740" />
     </state>
-    <state x="302" y="133" width="800" height="527" key="Vcs.Push.Dialog.v2/48.28.1318.740@48.28.1318.740" timestamp="1585389686690" />
+    <state x="302" y="133" width="800" height="527" key="Vcs.Push.Dialog.v2/48.28.1318.740@48.28.1318.740" timestamp="1585389909527" />
     <state x="362" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1585389044398">
       <screen x="48" y="28" width="1318" height="740" />
     </state>
