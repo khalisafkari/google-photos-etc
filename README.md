@@ -23,38 +23,35 @@
  3. run **npm run dev**
  4. JSON Mode  
  ```js 
-   // online example blogger 
-  `https://khalis-khalis411.now.sh/?url=https://prikate09.blogspot.com/2017/10/all-ani-29-oktober-2017-413.html`
+   // localhost example blogger 
+  `http://localhost:3000/WithBlogger/?url=https://prikate09.blogspot.com/2017/10/all-ani-29-oktober-2017-413.html`
 
-   //localhost mode blogger
-   `http://localhost:3000/?url=https://prikate09.blogspot.com/2017/10/all-ani-29-oktober-2017-413.html`
+   // onlie mode blogger
+   `https://khalis.khalis411.now.sh/withBlogger`
 
-   //online example cloudvideo.tv
-  `https://khalis-khalis411.now.sh/cloudvideo?url=https://khalis-khalis411.now.sh/cloudvideo?url=https://cloudvideo.tv/wnjb1hz5ccdd`
+   // blogger WithToken localhost
+  `http://localhost:3000/WithVideoToken`
+
+  // online blogger WithToken
+  `https://khalis.khalis411.now.sh/WithVideoToken`
   
-  //localhost mode cloudvideo.tv
-   `http://localhost:3000/cloudvideo?url=  https://khalis-khalis411.now.sh/cloudvideo?url=https://cloudvideo.tv/wnjb1hz5ccdd`
 
-   //online example photos.google.com
-   `https://khalis-khalis411.now.sh/photos?url=https://photos.google.com/share/AF1QipMTEPAiVF8t0YqLukflnOSQjwfd8ARIoT2h37AXvYO1uaWodbeiFoBUDuD_19tEbg/photo/AF1QipPA2Bq0JlAR9LoGD3mogsxSb9OZWEG4XqBDD4Rv?key=cjhUT0xrZjM5NGN2SVRLOVptZU5SMUlKV0lQYWpB`
+   //localhost example photos.google.com
+   `http://localhost:3000/GPhotos`
 
-   //localhost mode photos.google.com
-   `http://localhost:3000/photos?url=https://photos.google.com/share/AF1QipMTEPAiVF8t0YqLukflnOSQjwfd8ARIoT2h37AXvYO1uaWodbeiFoBUDuD_19tEbg/photo/AF1QipPA2Bq0JlAR9LoGD3mogsxSb9OZWEG4XqBDD4Rv?key=cjhUT0xrZjM5NGN2SVRLOVptZU5SMUlKV0lQYWpB`
+   //now demo mode photos.google.com
+   `https://khalis.khalis411.now.sh/GPhotos`
+
+   // now demo Solidfiles
+   `https://khalis.khalis411.now.sh/Solidfiles`
+
+    // localhost demo Solidfiles
+   `http://localhost:3000/Solidfiles`
 
 
-
- ```
- 6. > Video Mode 
- ```js
-
-   // Blogspot require /video/1?url=
-   `http://localhost:3000/video/1?url=https://prikate09.blogspot.com/2017/10/all-ani-29-oktober-2017-413.html`
-
-   //www.blogger.com/video.g?token  require /video/2?url=
-   `http://localhost:3000/video/2?url=https://www.blogger.com/video.g?token=AD6v5dy6xibQ1EBFaa1lN91Il9qch9W8dAnCVk8uDihtPVLuLwc0TUdSA24IP8gRMKqxIQQgenDZQFQA2pCYwQpH3O1iOKWxVfuapwPd6QIRDVKAtunBuMnh6ALvCUkLXhCqoH4RZ6D_`
-
+    to request a demo by yourself please use the url query
    
- ```
+ ``` 
 
 ## Screenshot
 
@@ -77,10 +74,7 @@
  
  * [x] Google Photos
  * [x] Blogger.com 
- * [x] ~~Cloudvideo.tv (*Proxy only*)~~
- * [x] mp4upload.com
- * [x] rapidvideo.com
- * [ ] yourupload.com
+ * [x] solidFiles
    
 ## Support
    <div>

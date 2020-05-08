@@ -3,9 +3,9 @@
     "name":"khalis",
     "alias":["khalis-khalis411.now.sh"],
     "builds":[
-        { "src": "dist/index.js", "use": "@now/node" }
+        { "src": "/example/index.js", "use": "@now/node" }
     ],
     "routes":[
-        { "src":".*","dest":"dist/index.js" }
+        { "src":".*","dest":"/example/index.js" }
     ]
 }
