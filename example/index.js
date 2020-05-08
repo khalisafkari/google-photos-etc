@@ -4,7 +4,9 @@ const cors = require('cors');
 const { Blogger,Solidfiles,GPhotos } = require('../dist')
 app.use(cors())
 
-
+app.get('/',(req,res)=>{
+    res.send('data')
+})
 
 app.get('/WithBlogger',async(req,res) => {
     try {
