@@ -12,7 +12,6 @@
   * [Install](#installation)
   * [Screenshot](#screenshot)
   * [Note](#note)
-  * [Donate](#donate)
   * [Support](#support)
 
 ## Installation
@@ -67,9 +66,6 @@
  
  > if you use react-native follow this repo [react-native-google-photos](https://github.com/khalisafkari/react-native-google-photos)
  
- ## Donate
- * <a href="https://paypal.me/khalisafkari?locale.x=id_ID"><img src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.png" heigth="50" width="50"/></a>
-
  ## Available
  
  * [x] Google Photos
