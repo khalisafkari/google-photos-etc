@@ -1,33 +1,24 @@
-export { default as Blogger } from './src/Blogger';
-export { default as GPhotos } from './src/GPhotos';
 export { default as Solidfiles }  from './src/Solidfiles';
+import { getBlogList, getSourceVideo } from './src/Blog';
+import GP from './src/GP';
 
 
-// Blogger.WithBlogger('https://prikate09.blogspot.com/2017/10/all-ani-29-oktober-2017-413.html')
-// .then((resuls) => {
-//     console.log(resuls)
-// }).catch((error) => {
-//     console.log(error)
-// })
+/*
+    Blogger
+    getBlogList: Promise<list[]>
+    getSourceVideo: Promise<source>
 
-// Blogger.WithVideoToken('https://www.blogger.com/video.g?token=AD6v5dyQXUjqRayoSfBIT3qk5lxWIjHZfaVrQbwohxdEXTw2ulOd9Dt7mrxZOyhuVoYBPUATpbeo9uZDqkCmVkzKsS2LYmzHXjsZRKEjDzK7OgNVKJBm59j_LJUE2djMywWz2JDQ-us')
-// .then((results) => {
-//     console.log(results)
-// })
+    Google Photos
+    GP: Promise<{ source: string }>
+ */
+
+//getBlogList('https://prikate09.blogspot.com/2017/10/all-ani-29-oktober-2017-413.html');
+//getSourceVideo('https://www.blogger.com/video.g?token=AD6v5dw27DkFA4pN3A4ym5njnsCfyh0s8spLVR2z2OfXBPSrTIsYZcHSCrpe6GMfmiO5zVxGf2p4ZBwPX6RlX4_ul7yIdQR4Fv8jXSSoKSeJ-4ZJx3sBW4SwQPIogsCMqB4WNNw_vhw')
+//GP('https://photos.google.com/share/AF1QipNccwxrdUIfGMkLpt-yA-QxQY7HGqg7_hqIinlPaYxg3rLhZIufTv0qB_fFs4pKYA/photo/AF1QipNRiHEP9DTCQkhhIC1AMah7eMcnm8UN8KTLLW5j?key=TUFuaUtNXzZzdUtsem1iUDNJcFNwbTFqQ3UzWC13')
 
 
-// GPhotos
-// .get('https://photos.google.com/share/AF1QipMTEPAiVF8t0YqLukflnOSQjwfd8ARIoT2h37AXvYO1uaWodbeiFoBUDuD_19tEbg/photo/AF1QipPA2Bq0JlAR9LoGD3mogsxSb9OZWEG4XqBDD4Rv?key=cjhUT0xrZjM5NGN2SVRLOVptZU5SMUlKV0lQYWpB')
-// .then((results) => {
-//     const todos = []
-//     for(let i = 0;i < results.length;i++){
-//         if(results[i]._res === "medium"){
-//            todos.push(results[i])
-//         }
-//     }
-//     console.log(todos)
-// })
-
-// Solidfiles.get('http://www.solidfiles.com/v/aZKjvxnDmk3NX').then((resuls) => {
-//     console.log(resuls)
-// })
+export {
+    getBlogList,
+    getSourceVideo,
+    GP
+}
