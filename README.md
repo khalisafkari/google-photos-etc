@@ -23,23 +23,23 @@
  4. JSON Mode  
  ```js 
    // localhost example blogger 
-  `http://localhost:3000/WithBlogger/?url=https://prikate09.blogspot.com/2017/10/all-ani-29-oktober-2017-413.html`
-
+  `http://localhost:3000/blist?url=https%3A%2F%2Fprikate09.blogspot.com%2F2017%2F10%2Fall-ani-29-oktober-2017-413.html`
+          
    // onlie mode blogger
-   `https://khalis.khalis411.now.sh/withBlogger`
+   `https://khalis-khalis411.vercel.app/blist?url=https%3A%2F%2Fprikate09.blogspot.com%2F2017%2F10%2Fall-ani-29-oktober-2017-413.html`
 
    // blogger WithToken localhost
-  `http://localhost:3000/WithVideoToken`
+  `http://localhost:3000/bsource?url=https%3A%2F%2Fwww.blogger.com%2Fvideo.g%3Ftoken%3DAD6v5dw27DkFA4pN3A4ym5njnsCfyh0s8spLVR2z2OfXBPSrTIsYZcHSCrpe6GMfmiO5zVxGf2p4ZBwPX6RlX4_ul7yIdQR4Fv8jXSSoKSeJ-4ZJx3sBW4SwQPIogsCMqB4WNNw_vhw`
 
   // online blogger WithToken
-  `https://khalis.khalis411.now.sh/WithVideoToken`
+  `https://khalis-khalis411.vercel.app/bsource?url=https%3A%2F%2Fwww.blogger.com%2Fvideo.g%3Ftoken%3DAD6v5dw27DkFA4pN3A4ym5njnsCfyh0s8spLVR2z2OfXBPSrTIsYZcHSCrpe6GMfmiO5zVxGf2p4ZBwPX6RlX4_ul7yIdQR4Fv8jXSSoKSeJ-4ZJx3sBW4SwQPIogsCMqB4WNNw_vhw`
   
 
    //localhost example photos.google.com
-   `http://localhost:3000/GPhotos`
+   `http://localhost:3000/gp?url=https://photos.google.com/share/AF1QipNccwxrdUIfGMkLpt-yA-QxQY7HGqg7_hqIinlPaYxg3rLhZIufTv0qB_fFs4pKYA/photo/AF1QipNRiHEP9DTCQkhhIC1AMah7eMcnm8UN8KTLLW5j?key=TUFuaUtNXzZzdUtsem1iUDNJcFNwbTFqQ3UzWC13`
 
    //now demo mode photos.google.com
-   `https://khalis.khalis411.now.sh/GPhotos`
+   `https://khalis-khalis411.vercel.app/gp?url=https://photos.google.com/share/AF1QipNccwxrdUIfGMkLpt-yA-QxQY7HGqg7_hqIinlPaYxg3rLhZIufTv0qB_fFs4pKYA/photo/AF1QipNRiHEP9DTCQkhhIC1AMah7eMcnm8UN8KTLLW5j?key=TUFuaUtNXzZzdUtsem1iUDNJcFNwbTFqQ3UzWC13`
 
    // now demo Solidfiles
    `https://khalis.khalis411.now.sh/Solidfiles`
