@@ -62,7 +62,7 @@
 
 const express = require('express');
 const cors = require('cors');
-const { GP, getBlogList, getSourceVideo } = require('../dist');
+const { GP, getBlogList, getSourceVideo, SB } = require('../dist');
 
 const app = express();
 app.use(cors())
@@ -75,6 +75,9 @@ app.get('/', (req, res) => {
         blogger:{
             list: '/blist?url=https://prikate09.blogspot.com/2017/10/all-ani-29-oktober-2017-413.html',
             source: '/bsource?url=https://www.blogger.com/video.g?token=AD6v5dw27DkFA4pN3A4ym5njnsCfyh0s8spLVR2z2OfXBPSrTIsYZcHSCrpe6GMfmiO5zVxGf2p4ZBwPX6RlX4_ul7yIdQR4Fv8jXSSoKSeJ-4ZJx3sBW4SwQPIogsCMqB4WNNw_vhw'
+        },
+        streamsb:{
+            url: '/sb?url=https://sbembed1.com/wl8hcnm2ihlr.html#'
         }
     })
 });
@@ -115,6 +118,18 @@ app.get('/bsource', async (req, res) => {
 
     const fetch = await getSourceVideo(url);
     return res.status(200).send(fetch);
+})
+
+app.get('/sb', async (req, res) => {
+    const url = req.query.url;
+    if(!url) {
+        return  res.status(201).send({
+            status: 201,
+            message: 'not valid url'
+        })
+    }
+    const fetch = await SB(url);
+    return res.status(200).send(fetch)
 })
 
 app.listen(3000);
